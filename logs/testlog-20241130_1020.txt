@@ -1,0 +1,3 @@
+nov. 30, 2024 10:20:58 PM TestClass main
+INFORMAÇÕES: 
+Essa é uma mensagem de informação de log
