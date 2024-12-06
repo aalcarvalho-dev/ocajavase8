@@ -27,3 +27,7 @@ java
 - usando java -cp . _com.oca.tutorial.NomeArquivo_, faz com que a aplicação seja executada
 a partir do bytecode existente no caminho informado.
 Se só houver uma classe, o uso do -cp . é opcional
+
+### Distribuindo
+jar
+- jar -cp libqualquer.jar -C out .
