@@ -1,0 +1,4 @@
+1) condicionais: if, else, switch, case, default
+2) iteracao: for, do, while, break, continue
+3) transferência de controle: return, continue, break
+4) excecao: try, catch, finally, throw
