@@ -3,7 +3,11 @@ import java.util.List;
 import java.util.ArrayList;
 public class Iteracao{
 	public static void main(String[] args){
-		//float fishL[] = {1.9f, 2.8f, 13.1f, 29.2f, 35.3f};
+		float fishS[] = {1.9f, 2.8f, 13.1f, 29.2f, 35.3f};
+
+		for(int i=0; i<fishS.length; i++){
+			System.out.println("Valor: "+fishS[i]);
+		}
 		//fishL=[1.9];
 		List<Float> fishL = new ArrayList<Float>();
 		fishL.add(1.9f);
