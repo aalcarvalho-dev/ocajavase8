@@ -40,3 +40,9 @@ jar
 ### Instruções de Iteração
 
 ### Instruções de Transferência de Controle
+
+### Instruções Rotuladas *
+- Pode ser utilizada com continue, break
+- Só usar ao substituir outras abordagens em algumas ocasiões
+
+
