@@ -44,6 +44,16 @@ public class TesteStringBuilder{
 		//reverse()
 		System.out.println(sb.reverse());
 
+		//Construtores
+		StringBuilder sbA = new StringBuilder();
+		StringBuilder sbB = new StringBuilder(1);
+		System.out.println(sbA);
+		StringBuilder sbC = new StringBuilder("Agora");
+
+		//Exercicio 3.4
+		String eggs1 = "ovo";
+		String eggs2 = "ovos";
+		System.out.println(eggs1.compareTo(eggs2));
 
 	}
 }
