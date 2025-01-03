@@ -41,6 +41,12 @@ jar
 
 ### Instruções de Transferência de Controle
 
+### Instruções Rotuladas *
+- Pode ser utilizada com continue, break
+- Só usar ao substituir outras abordagens em algumas ocasiões
+
+
+
 ### Passos conversão Lambdas
 #### Preparação
 1) Cria uma Interface (ex.:Printable, que tem a assinatura de 1 método print())

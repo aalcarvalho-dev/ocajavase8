@@ -20,5 +20,14 @@ public class Incremento{
 		}
 
 		for (int j=0; j < 3; ++j) System.out.println(j);
+
+		boolean isValid = true;
+
+		if (i == 0) ; else if (i == 1) {} else {;}
+
+		boolean novidade = new Boolean(true);
+		boolean velhice = new Boolean("true");
+		boolean meeiro = new Boolean("TRUE");
+		//boolean novissimo = new Boolean(TRUE);
 	}
 }
