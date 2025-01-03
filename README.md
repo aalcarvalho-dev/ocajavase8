@@ -88,3 +88,5 @@ Também podemos suprimir o tipo no argumento do método e remover os parênteses
 ```
 Printable lambdaPrintable = num -> "Auauafafa! "+num;
 ```
+
+### Informações Generics
