@@ -40,3 +40,29 @@ jar
 ### Instruções de Iteração
 
 ### Instruções de Transferência de Controle
+
+### Passos conversão Lambdas
+#### Preparação
+1) Cria uma Interface (ex.:Printable, que tem a assinatura de 1 método print())
+2) Cria uma Classe que implementa Printable (Classe Gato que implementa com um Miau)
+3) Cria uma Classe testadora que instancia gato e que chama o método print e exibe em tela o Miau
+4) Cria na Classe testadora um método que recebe Printable e executa o único método que a Interface declara (ex.: emiteSom(Printable obj) obj.print())
+
+#### Refatorando
+1) Em vez de passar como argumento para o método emiteSom o objeto cachorro, o argumento do método será uma função anônima
+2) A função tem a implementação do método print() por parte da classe Cachorro: 
+```
+@Override
+public void print() {
+    System.out.println("Auau!");
+}
+```
+3) Após isso, removo o modificador (public), o tipo de retorno (void), o identificador (print)
+4) Por último, é incluído o símbolo -> entre o fim do parêntese e o início da chave do bloco com o corpo do método. Esse é resultado:
+```
+emiteSom(
+    () -> {
+        System.out.println("Auauafafa!");
+    }
+);
+```
