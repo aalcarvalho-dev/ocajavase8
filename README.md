@@ -66,3 +66,19 @@ emiteSom(
     }
 );
 ```
+Obs.: Se eu mudar algo na assinatura do método da interface, devo replicar essa alteração na função anônima
+
+### Continuando a refatoração
+1) Para refinar ainda mais a função anônima, podemos retirar as chaves que definem o bloco (*No caso de apenas uma instrução no bloco*) e retirar o ponto-e-vírgula ao fim da instrução
+2) Podemos subir a instrução para a linha da chamada do método, ficando:
+```emiteSom((int num) -> System.out.println("Auauafafa! "+num));```
+Obs.: Podemos atribuir a função a uma variável e passar essa variável como argumento do método:
+```
+Printable lambdaPrintable = (int num) -> System.out.println("Auauafafa! "+num);
+emiteSom(lambdaPrintable);
+```
+Também podemos suprimir o tipo no argumento do método e remover os parênteses desse argumento: ```Printable lambdaPrintable = num -> System.out.println("Auauafafa! "+num);```
+3) Por fim, se o método define que há um retorno, essa expressão pode estar sem nada em volta. Sem nem mesmo a palavra return:
+```
+Printable lambdaPrintable = num -> "Auauafafa! "+num;
+```

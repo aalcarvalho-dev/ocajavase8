@@ -7,7 +7,8 @@ public class Gato implements Printable{
     public Gato(){}
 
     @Override
-    public void print() {
-        System.out.println("Miau!");
+    public String print(int num) {
+        return "Miau!";
+        //return 1;
     }
 }

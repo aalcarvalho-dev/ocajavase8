@@ -1,5 +1,6 @@
 package com.example.lambdas;
 
+@FunctionalInterface
 public interface Printable {
-    void print();
+    String print(int num);
 }

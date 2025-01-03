@@ -2,19 +2,16 @@ package com.example.lambdas;
 
 public class Main {
     public static void main(String[] args) {
-        Gato gato = new Gato();
-        gato.print();
+        //Gato gato = new Gato();
+        //gato.print(2);
 
-        Cachorro cachorro = new Cachorro();
-        emiteSom(
-            () -> {
-                System.out.println("Auauafafa!");
-            }
-        );
+        Printable lambdaPrintable = num -> "Auauafafa! "+num;
+        emiteSom(lambdaPrintable);
     }
 
 
     private static void emiteSom(Printable emissor){
-        emissor.print();
+        System.out.println(emissor.print(2));
     }
+
 }
