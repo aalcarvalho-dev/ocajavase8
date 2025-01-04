@@ -65,7 +65,7 @@ public class Main {
         System.out.println(mediaArrayList);
 
         BigDecimal mediaBigDecimal= main.encontraTemperaturaMediaBigDecimal(temperaturasBigDecimail);
-        System.out.println(mediaBigDecimal);
+        System.out.println(mediaBigDecimal.setScale(2, RoundingMode.CEILING));
     }
 
     private float encontraTemperaturaMediaArrayPadrao(float[] temperaturas){
